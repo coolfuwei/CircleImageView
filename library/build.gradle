@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'com.novoda.bintray-release'//添加
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.0"
@@ -19,6 +19,23 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    allprojects {
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+            options.addStringOption('encoding', 'UTF-8')
+        }
+    }
+}
+//更新版本执行命令  ./gradlew clean build bintrayUpload -PbintrayUser=coollkkz -PbintrayKey=377ecbf1cb03b320da94f159194e0d4d7c89b4e7 -PdryRun=false
+
+//添加
+publish {
+    userOrg = 'coollkkz'//bintray.com用户名
+    groupId = 'com.cool'//jcenter上的路径
+    artifactId = 'circleimageview'//项目名称
+    publishVersion = '1.0.1'//版本号
+    desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
+    website = 'hhttps://github.com/coolfuwei/CircleImageView'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }
 
 dependencies {
