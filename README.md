@@ -2,6 +2,7 @@
 a circle imageView for android
 
 ##效果图
+
 ![Image text](img/1.png)
 
 ##如果你是androidStudio用户，在Gradle添加

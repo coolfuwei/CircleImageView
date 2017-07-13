@@ -26,7 +26,7 @@ android {
         }
     }
 }
-//更新版本执行命令  ./gradlew clean build bintrayUpload -PbintrayUser=coollkkz -PbintrayKey=377ecbf1cb03b320da94f159194e0d4d7c89b4e7 -PdryRun=false
+//更新版本执行命令  ./gradlew clean build bintrayUpload -PbintrayUser=coollkkz -PbintrayKey=xxxx -PdryRun=false
 
 //添加
 publish {
