@@ -1,11 +1,11 @@
 # CircleImageView
 a circle imageView for android
 
-##效果图
+## 效果图
 
 ![Image text](img/1.png)
 
-##如果你是androidStudio用户，在Gradle添加
+## 如果你是androidStudio用户，在Gradle添加
 
 	dependencies {
     ...
@@ -14,7 +14,7 @@ a circle imageView for android
 	
 	
 
-##使用
+## 使用
 
     <com.cool.library.widget.CircleImageView
         xmlns:me="http://schemas.android.com/apk/res-auto"
